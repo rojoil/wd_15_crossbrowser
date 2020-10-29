@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Евклид — проектные системы</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link rel="stylesheet" href="css/grid.css">-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header-container custom-container">
+    <ul class="header-list">
+      <li class="header-list-item logo">
+        <img src="img/logo.svg" alt="logo" class="logo-img" aria-label="Логотип">
+      </li>
+      <li class="header-list-item navigation-list">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-item-link">
+                О нас
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-item-link">
+                Проекты
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-item-link">
+                Этапы
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="/" class="header-nav-item-link">
+                Отзывы
+              </a>
+            </li>
+            <li class="header-nav-item nav-contacts">
+              <a href="/" class="header-nav-item-link">
+                Контакты
+              </a>
+            </li>
+            <li class="header-nav-item search-icon" aria-label="Найти">
+              <img src="img/search.svg" alt="search" class="search-icon-img"> 
+            </li>
+          </ul>
+        </nav>
+      </li>
+      <li class="header-list-item header-burger" aria-label="Бургер-меню">
+        <div class="header-burger-line first-line"></div>
+        <div class="header-burger-line second-line"></div>
+        <div class="header-burger-line third-line"></div>
+      </li>
+    </ul>
+  </header>
+  <section class="mobile-nav-section">
+    <nav class="mobile-nav custom-container">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-item-link">
+            О нас
+          </a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-item-link">
+            Проекты
+          </a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-item-link">
+            Этапы
+          </a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-item-link">
+            Отзывы
+          </a>
+        </li>
+        <li class="mobile-nav-item nav-contacts">
+          <a href="/" class="mobile-nav-item-link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="hero">
+    <div class="custom-container swiper-container">
+      <div class="swiper-wrapper">
+        <div class="hero-container hero-1 swiper-slide">
+          <div class="hero-box">
+            <h1 class="hero-title">
+              Проектные решения любой сложности
+            </h1>
+            <div class="hero-description">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+            </div>
+            <button class="hero-btn btn">
+              Заказать расчёт
+            </button>
+          </div>
+        </div>
+        <div class="hero-container hero-2 swiper-slide">
+          <div class="hero-box">
+            <h1 class="hero-title">
+              Проектные решения любой сложности
+            </h1>
+            <div class="hero-description">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+            </div>
+            <button class="hero-btn btn">
+              Заказать расчёт
+            </button>
+          </div>    
+        </div>
+        <div class="hero-container hero-3 swiper-slide">
+          <div class="hero-box">
+            <h1 class="hero-title">
+              Проектные решения любой сложности
+            </h1>
+            <div class="hero-description">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+            </div>
+            <button class="hero-btn btn">
+              Заказать расчёт
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>  
+    </div>
+  </section>
+  <section class="section-about custom-container">
+    <div class="about">
+      <h2 class="section-title about-title">
+        О нас
+      </h2>
+      <div class="about-description">
+        Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+      </div>
+      <div class="about-cards">
+        <div class="worker-card-wrap">
+          <div class="worker-card">
+            <div class="worker-card-text">
+              <div class="worker-card-text-description">
+                Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+              </div>
+              <button class="worker-card-text-btn btn">Подробнее</button>
+            </div>
+          </div>
+          <div class="worker-card-mobile">
+              <div class="worker-card-description-mobile">
+                Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+              </div>
+            <button class="worker-card-btn-mobile btn">Подробнее</button>
+          </div>
+        </div>
+        <div class="advantages-cards">
+          <div class="adv-card card-consultation">
+            <img src="img/package-ellips.png" alt="ell" class="package-ellips ell-img">
+            <img src="img/package_mobile.png" alt="ell-mob" class="package-ellips-mobile">
+            <h2 class="adv-card-title">
+              Консультация с широким активом
+            </h2>
+            <div class="adv-card-description">
+              А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+            </div>
+          </div>
+          <div class="adv-card card-aspiration">
+            <img src="img/sttg-ellips.png" alt="ell" class="sttg-ellips ell-img">
+            <img src="img/sttg-mobile.png" alt="ell-mob" class="sttg-ellips-mobile">
+            <h2 class="adv-card-title">
+              В своём стремлении повысить
+            </h2>
+            <div class="adv-card-description sttg-description">
+              Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-work custom-container">
+    <h2 class="section-title our-work-title">
+      Как мы работаем
+    </h2>
+      <ul class="our-work-steps">
+        <li class="our-work-step step-first">
+          1 шаг
+        </li>
+        <li class="our-work-step">
+          2 шаг
+        </li>
+        <li class="our-work-step">
+          3 шаг
+        </li>
+        <li class="our-work-step">
+          4 шаг
+        </li>
+      </ul>
+    <div class="our-work-container">
+      <img src="img/consult_mobile.png" alt="consult" class="consult-mobile">
+      <div class="our-work-left-block">
+        <h2 class="our-work-consultation-title">
+          Проводим консультацию
+        </h2>
+        <div class="our-work-consultation-description">
+          Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+        </div>
+        <div class="our-work-buttons">
+          <div class="see-more-btn btn">
+            Подробнее
+          </div>
+          <div class="treaty-btn btn">
+            Договор
+          </div>
+        </div>
+      </div>
+      <picture class="consult-img-container">
+        <source class="consult-img" srcset="img/consult.jpg" media="(min-width: 1426px)">
+        <img class="consult-img" src="img/consult_tablet.png" alt="consult">  
+      </picture>
+    </div>
+  </section>
+  <section class="FAQ custom-container">
+    <h2 class="section-title FAQ-title">
+      Часто задаваемые вопросы
+    </h2>
+    <div class="FAQ-list" id="accordion">
+      <div class="FAQ-item">
+        <div class="FAQ-item-text">
+          Из чего формируется конечная стоимость проекта?
+        </div>
+        <img src="img/cross.png" alt="cross-plus" class="plus-link-image">
+      </div>
+      <div class="FAQ-item-cotent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus qui eius omnis nemo harum, temporibus earum culpa unde dicta possimus autem natus commodi at id voluptatibus. Esse, tempore minus?
+      </div>
+      <div class="FAQ-item">
+        <div class="FAQ-item-text">
+          У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+        </div>
+        <img src="img/cross.png" alt="cross-plus" class="plus-link-image">
+      </div>
+      <div class="FAQ-item-cotent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus qui eius omnis nemo harum, temporibus earum culpa unde dicta possimus autem natus commodi at id voluptatibus. Esse, tempore minus?
+      </div>
+      <div class="FAQ-item">
+        <div class="FAQ-item-text">
+          Я выбираю между разными компаниями. В чём ваше отличие?
+        </div>
+        <img src="img/cross.png" alt="cross-plus" class="plus-link-image">
+      </div>
+      <div class="FAQ-item-cotent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus qui eius omnis nemo harum, temporibus earum culpa unde dicta possimus autem natus commodi at id voluptatibus. Esse, tempore minus?
+      </div>
+      <div class="FAQ-item">
+        <div class="FAQ-item-text">
+          Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+        </div>
+        <img src="img/cross.png" alt="cross-plus" class="plus-link-image">
+      </div>
+      <div class="FAQ-item-cotent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus qui eius omnis nemo harum, temporibus earum culpa unde dicta possimus autem natus commodi at id voluptatibus. Esse, tempore minus?
+      </div>
+      <div class="FAQ-item">
+        <div class="FAQ-item-text">
+          Могу ли я вернуть деньги на каком-либо из этапов работ?
+        </div>
+        <img src="img/cross.png" alt="cross-plus" class="plus-link-image">
+      </div>
+      <div class="FAQ-item-cotent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus qui eius omnis nemo harum, temporibus earum culpa unde dicta possimus autem natus commodi at id voluptatibus. Esse, tempore minus?
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="custom-container footer-container">
+      <div class="footer-left">
+        <img src="img/logo-footetr.png" alt="logo" class="footer-logo">
+        <div class="footer-statement">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.
+        </div>
+        <div class="footer-social">
+          <a href="http://facebook.com" class="social-link">
+            <img src="img/fb.png" alt="FB" class="social-logo">
+          </a>
+          <a href="http://vk.com" class="social-link">
+            <img src="img/vk.png" alt="VK" class="social-logo">
+          </a>
+          <a href="http://instagram.com" class="social-link">
+            <img src="img/inst.png" alt="inst" class="social-logo">
+          </a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <h2 class="section-title footer-form-title">
+          Оставить заявку
+        </h2>
+        <form action="/" method="post" id="footer-form" class="footer-form" aria-label="Оставьте заявку на консультацию">
+          <input type="text" placeholder="Фамилия, имя и отчество*" required class="footer-input" aria-label="Введите, пожалуйста, свои фамилию, имя и отчество">
+          <input type="text" placeholder="E-mail*" required class="footer-input" aria-label="Введите, пожалуйста, свой e-mail">
+          <textarea name="footer-message" placeholder="Сообщение..." form="footer-form" class="footer-input footer-message" aria-label="Введите, пожалуйста, текст своего обращения"></textarea>
+          <div class="form-bottom">
+            <button type="submit" class="footer-btn btn">Отправить данные</button>
+            <input id="check" type="checkbox" checked class="footer-checkbox" aria-label="Необходимо отметить эту графу галочкой, чтобы согласиться с обработкой персональных данных">
+            <label for="check" class="agreement">
+            Согласен на обработку данных
+          </label>
+            <div class="checkbox-mobile">
+              <input id="check-mobile" type="checkbox" checked class="footer-checkbox-mobile" aria-label="Необходимо отметить эту графу галочкой, чтобы согласиться с обработкой персональных данных">
+            <label for="check-mobile" class="agreement-mobile">
+            Согласен на обработку данных
+          </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer-bottom">
+        <div class="separator"></div>
+        <img src="img/logo-footer-mobile.png" alt="logo" class="footer-bottom-logo">
+        <div class="footer-social-mobile">
+          <a href="http://facebook.com" class="social-link" aria-label="Наша страница в фейсбуке">
+            <img src="img/fb-mobile.png" alt="FB" class="social-logo">
+          </a>
+          <a href="http://vk.com" class="social-link" aria-label="Наша страница ВКонтакте">
+            <img src="img/vk-mobile.png" alt="VK" class="social-logo">
+          </a>
+          <a href="http://instagram.com" class="social-link" aria-label="Наша страница в инстаграм">
+            <img src="img/instagram-mobile.png" alt="inst" class="social-logo">
+          </a>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="/" class="footer-nav-link">
+          О нас
+        </a>
+        <a href="/" class="footer-nav-link">
+          Проекты
+        </a>
+        <a href="/" class="footer-nav-link">
+          Отзывы
+        </a>
+        <a href="/" class="footer-nav-link">
+          Договор оферты
+        </a>
+        <a href="/" class="footer-nav-link">
+          Договор подряда
+        </a>
+        <a href="/" class="footer-nav-link">
+          Конфиденциальность
+        </a>
+        <a href="/" class="footer-nav-link">
+          Партнёрское соглашение
+        </a>
+        <div class="footer-social-tablet">
+          <a href="http://facebook.com" class="social-link" aria-label="Наша страница в фейсбуке">
+            <img src="img/fb.png" alt="FB" class="social-logo">
+          </a>
+          <a href="http://vk.com" class="social-link" aria-label="Наша страница ВКонтакте">
+            <img src="img/vk.png" alt="VK" class="social-logo">
+          </a>
+          <a href="http://instagram.com" class="social-link" aria-label="Наша страница в инстаграм">
+            <img src="img/inst.png" alt="inst" class="social-logo">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
